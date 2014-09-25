@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6DE19D491DA003EC88D /* AppDelegate.swift */; };
-		FADDD6E119D491DA003EC88D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6E019D491DA003EC88D /* MainViewController.swift */; };
-		FADDD6E419D491DA003EC88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E219D491DA003EC88D /* Main.storyboard */; };
 		FADDD6E619D491DA003EC88D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E519D491DA003EC88D /* Images.xcassets */; };
 		FADDD6E919D491DA003EC88D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E719D491DA003EC88D /* LaunchScreen.xib */; };
 		FADDD6F519D491DA003EC88D /* Wattpad_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */; };
 		FADDD70019D49238003EC88D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6FF19D49238003EC88D /* Extension.swift */; };
+		FADDD71919D49DBB003EC88D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD71819D49DBB003EC88D /* MainViewController.swift */; };
+		FADDD71C19D49E08003EC88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADDD71E19D49E08003EC88D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +30,14 @@
 		FADDD6D919D491DA003EC88D /* Wattpad Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wattpad Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADDD6DD19D491DA003EC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADDD6DE19D491DA003EC88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FADDD6E019D491DA003EC88D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FADDD6E319D491DA003EC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADDD6E519D491DA003EC88D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FADDD6E819D491DA003EC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FADDD6EE19D491DA003EC88D /* Wattpad LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wattpad LifeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADDD6F319D491DA003EC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wattpad_LifeTests.swift; sourceTree = "<group>"; };
 		FADDD6FF19D49238003EC88D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FADDD71819D49DBB003EC88D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FADDD71D19D49E08003EC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				FADDD6DE19D491DA003EC88D /* AppDelegate.swift */,
-				FADDD6E019D491DA003EC88D /* MainViewController.swift */,
-				FADDD6E219D491DA003EC88D /* Main.storyboard */,
 				FADDD6E519D491DA003EC88D /* Images.xcassets */,
 				FADDD6E719D491DA003EC88D /* LaunchScreen.xib */,
 				FADDD6FE19D49213003EC88D /* Extension */,
+				FADDD71719D49DBB003EC88D /* Controller */,
 				FADDD6DC19D491DA003EC88D /* Supporting Files */,
 			);
 			path = "Wattpad Life";
@@ -121,6 +120,15 @@
 				FADDD6FF19D49238003EC88D /* Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FADDD71719D49DBB003EC88D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD71E19D49E08003EC88D /* Main.storyboard */,
+				FADDD71819D49DBB003EC88D /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADDD6E419D491DA003EC88D /* Main.storyboard in Resources */,
+				FADDD71C19D49E08003EC88D /* Main.storyboard in Resources */,
 				FADDD6E919D491DA003EC88D /* LaunchScreen.xib in Resources */,
 				FADDD6E619D491DA003EC88D /* Images.xcassets in Resources */,
 			);
@@ -223,8 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADDD71919D49DBB003EC88D /* MainViewController.swift in Sources */,
 				FADDD70019D49238003EC88D /* Extension.swift in Sources */,
-				FADDD6E119D491DA003EC88D /* MainViewController.swift in Sources */,
 				FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,20 +256,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FADDD6E219D491DA003EC88D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FADDD6E319D491DA003EC88D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FADDD6E719D491DA003EC88D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FADDD6E819D491DA003EC88D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FADDD71E19D49E08003EC88D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADDD71D19D49E08003EC88D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +427,7 @@
 				FADDD6FA19D491DA003EC88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FADDD6FB19D491DA003EC88D /* Build configuration list for PBXNativeTarget "Wattpad LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				FADDD6FD19D491DA003EC88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
