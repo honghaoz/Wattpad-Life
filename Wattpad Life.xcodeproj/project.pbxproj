@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6DE19D491DA003EC88D /* AppDelegate.swift */; };
+		FADDD6E119D491DA003EC88D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6E019D491DA003EC88D /* ViewController.swift */; };
+		FADDD6E419D491DA003EC88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E219D491DA003EC88D /* Main.storyboard */; };
+		FADDD6E619D491DA003EC88D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E519D491DA003EC88D /* Images.xcassets */; };
+		FADDD6E919D491DA003EC88D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E719D491DA003EC88D /* LaunchScreen.xib */; };
+		FADDD6F519D491DA003EC88D /* Wattpad_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADDD6EF19D491DA003EC88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADDD6D119D491DA003EC88D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADDD6D819D491DA003EC88D;
+			remoteInfo = "Wattpad Life";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADDD6D919D491DA003EC88D /* Wattpad Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wattpad Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADDD6DD19D491DA003EC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADDD6DE19D491DA003EC88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FADDD6E019D491DA003EC88D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FADDD6E319D491DA003EC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADDD6E519D491DA003EC88D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FADDD6E819D491DA003EC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FADDD6EE19D491DA003EC88D /* Wattpad LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wattpad LifeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADDD6F319D491DA003EC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wattpad_LifeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADDD6D619D491DA003EC88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADDD6EB19D491DA003EC88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADDD6D019D491DA003EC88D = {
+			isa = PBXGroup;
+			children = (
+				FADDD6DB19D491DA003EC88D /* Wattpad Life */,
+				FADDD6F119D491DA003EC88D /* Wattpad LifeTests */,
+				FADDD6DA19D491DA003EC88D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADDD6DA19D491DA003EC88D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD6D919D491DA003EC88D /* Wattpad Life.app */,
+				FADDD6EE19D491DA003EC88D /* Wattpad LifeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADDD6DB19D491DA003EC88D /* Wattpad Life */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD6DE19D491DA003EC88D /* AppDelegate.swift */,
+				FADDD6E019D491DA003EC88D /* ViewController.swift */,
+				FADDD6E219D491DA003EC88D /* Main.storyboard */,
+				FADDD6E519D491DA003EC88D /* Images.xcassets */,
+				FADDD6E719D491DA003EC88D /* LaunchScreen.xib */,
+				FADDD6DC19D491DA003EC88D /* Supporting Files */,
+			);
+			path = "Wattpad Life";
+			sourceTree = "<group>";
+		};
+		FADDD6DC19D491DA003EC88D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD6DD19D491DA003EC88D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADDD6F119D491DA003EC88D /* Wattpad LifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */,
+				FADDD6F219D491DA003EC88D /* Supporting Files */,
+			);
+			path = "Wattpad LifeTests";
+			sourceTree = "<group>";
+		};
+		FADDD6F219D491DA003EC88D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADDD6F319D491DA003EC88D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADDD6D819D491DA003EC88D /* Wattpad Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADDD6F819D491DA003EC88D /* Build configuration list for PBXNativeTarget "Wattpad Life" */;
+			buildPhases = (
+				FADDD6D519D491DA003EC88D /* Sources */,
+				FADDD6D619D491DA003EC88D /* Frameworks */,
+				FADDD6D719D491DA003EC88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wattpad Life";
+			productName = "Wattpad Life";
+			productReference = FADDD6D919D491DA003EC88D /* Wattpad Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADDD6ED19D491DA003EC88D /* Wattpad LifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADDD6FB19D491DA003EC88D /* Build configuration list for PBXNativeTarget "Wattpad LifeTests" */;
+			buildPhases = (
+				FADDD6EA19D491DA003EC88D /* Sources */,
+				FADDD6EB19D491DA003EC88D /* Frameworks */,
+				FADDD6EC19D491DA003EC88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADDD6F019D491DA003EC88D /* PBXTargetDependency */,
+			);
+			name = "Wattpad LifeTests";
+			productName = "Wattpad LifeTests";
+			productReference = FADDD6EE19D491DA003EC88D /* Wattpad LifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADDD6D119D491DA003EC88D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = HonghaoZ;
+				TargetAttributes = {
+					FADDD6D819D491DA003EC88D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					FADDD6ED19D491DA003EC88D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FADDD6D819D491DA003EC88D;
+					};
+				};
+			};
+			buildConfigurationList = FADDD6D419D491DA003EC88D /* Build configuration list for PBXProject "Wattpad Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADDD6D019D491DA003EC88D;
+			productRefGroup = FADDD6DA19D491DA003EC88D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADDD6D819D491DA003EC88D /* Wattpad Life */,
+				FADDD6ED19D491DA003EC88D /* Wattpad LifeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADDD6D719D491DA003EC88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADDD6E419D491DA003EC88D /* Main.storyboard in Resources */,
+				FADDD6E919D491DA003EC88D /* LaunchScreen.xib in Resources */,
+				FADDD6E619D491DA003EC88D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADDD6EC19D491DA003EC88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADDD6D519D491DA003EC88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADDD6E119D491DA003EC88D /* ViewController.swift in Sources */,
+				FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADDD6EA19D491DA003EC88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADDD6F519D491DA003EC88D /* Wattpad_LifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADDD6F019D491DA003EC88D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADDD6D819D491DA003EC88D /* Wattpad Life */;
+			targetProxy = FADDD6EF19D491DA003EC88D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADDD6E219D491DA003EC88D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADDD6E319D491DA003EC88D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADDD6E719D491DA003EC88D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADDD6E819D491DA003EC88D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADDD6F619D491DA003EC88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADDD6F719D491DA003EC88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADDD6F919D491DA003EC88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wattpad Life/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADDD6FA19D491DA003EC88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wattpad Life/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FADDD6FC19D491DA003EC88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wattpad LifeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wattpad Life.app/Wattpad Life";
+			};
+			name = Debug;
+		};
+		FADDD6FD19D491DA003EC88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wattpad LifeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wattpad Life.app/Wattpad Life";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADDD6D419D491DA003EC88D /* Build configuration list for PBXProject "Wattpad Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADDD6F619D491DA003EC88D /* Debug */,
+				FADDD6F719D491DA003EC88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADDD6F819D491DA003EC88D /* Build configuration list for PBXNativeTarget "Wattpad Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADDD6F919D491DA003EC88D /* Debug */,
+				FADDD6FA19D491DA003EC88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADDD6FB19D491DA003EC88D /* Build configuration list for PBXNativeTarget "Wattpad LifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADDD6FC19D491DA003EC88D /* Debug */,
+				FADDD6FD19D491DA003EC88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADDD6D119D491DA003EC88D /* Project object */;
+}
