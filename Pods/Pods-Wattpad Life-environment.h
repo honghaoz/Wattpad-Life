@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 4
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
+// Bolts
+#define COCOAPODS_POD_AVAILABLE_Bolts
+#define COCOAPODS_VERSION_MAJOR_Bolts 1
+#define COCOAPODS_VERSION_MINOR_Bolts 1
+#define COCOAPODS_VERSION_PATCH_Bolts 2
+
 // JGProgressHUD
 #define COCOAPODS_POD_AVAILABLE_JGProgressHUD
 #define COCOAPODS_VERSION_MAJOR_JGProgressHUD 1
@@ -71,6 +77,12 @@
 #define COCOAPODS_VERSION_MAJOR_MZFormSheetController_Core 2
 #define COCOAPODS_VERSION_MINOR_MZFormSheetController_Core 4
 #define COCOAPODS_VERSION_PATCH_MZFormSheetController_Core 1
+
+// Parse
+#define COCOAPODS_POD_AVAILABLE_Parse
+#define COCOAPODS_VERSION_MAJOR_Parse 1
+#define COCOAPODS_VERSION_MINOR_Parse 4
+#define COCOAPODS_VERSION_PATCH_Parse 1
 
 // PureLayout
 #define COCOAPODS_POD_AVAILABLE_PureLayout

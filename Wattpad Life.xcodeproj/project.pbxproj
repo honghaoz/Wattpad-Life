@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09D960583E5B4726BF583F8C /* libPods-Wattpad Life.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85675216123C423F833FB096 /* libPods-Wattpad Life.a */; };
-		8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */; };
 		8F1121E819D5AFAE00C75760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E719D5AFAE00C75760 /* Constants.swift */; };
 		8F1121EA19D5C1F300C75760 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E919D5C1F300C75760 /* CustomCollectionViewCell.swift */; };
 		8F1121EC19D5CD8B00C75760 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121EB19D5CD8B00C75760 /* DetailUserViewController.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		85675216123C423F833FB096 /* libPods-Wattpad Life.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wattpad Life.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1121E319D5AECA00C75760 /* Wattpad Life-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wattpad Life-Bridging-Header.h"; sourceTree = "<group>"; };
-		8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Wattpad-Life-Bridging-Header.m"; sourceTree = "<group>"; };
 		8F1121E719D5AFAE00C75760 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F1121E919D5C1F300C75760 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F1121EB19D5CD8B00C75760 /* DetailUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				FADDD6FE19D49213003EC88D /* Extension */,
 				FADDD71719D49DBB003EC88D /* Controller */,
 				FADDD6DC19D491DA003EC88D /* Supporting Files */,
-				8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */,
 				8F1121E319D5AECA00C75760 /* Wattpad Life-Bridging-Header.h */,
 			);
 			path = "Wattpad Life";
@@ -340,7 +337,6 @@
 			files = (
 				8F1121E819D5AFAE00C75760 /* Constants.swift in Sources */,
 				8F1121EA19D5C1F300C75760 /* CustomCollectionViewCell.swift in Sources */,
-				8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */,
 				FADDD71919D49DBB003EC88D /* MainViewController.swift in Sources */,
 				FADDD70019D49238003EC88D /* Extension.swift in Sources */,
 				8F1121EC19D5CD8B00C75760 /* DetailUserViewController.swift in Sources */,

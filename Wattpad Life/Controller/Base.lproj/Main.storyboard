@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HaW-Lk-XSH">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Wattpad Life-->
@@ -35,13 +35,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-n2-m7a">
-                                                    <rect key="frame" x="8" y="78" width="84" height="21"/>
+                                                    <rect key="frame" x="0.0" y="70" width="100" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ml-TA-70Y">
-                                                    <rect key="frame" x="15" y="8" width="70" height="70"/>
+                                                    <rect key="frame" x="15" y="0.0" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="48c-8l-Eb0"/>
                                                         <constraint firstAttribute="width" constant="70" id="SLg-vl-ZG1"/>
@@ -52,20 +52,12 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="QHD-n2-m7a" firstAttribute="top" secondItem="7Ml-TA-70Y" secondAttribute="bottom" id="4vM-tN-KI3"/>
-                                            <constraint firstItem="7Ml-TA-70Y" firstAttribute="top" secondItem="deh-1V-Hyn" secondAttribute="topMargin" id="FFP-QG-SoJ"/>
-                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="leading" secondItem="deh-1V-Hyn" secondAttribute="leadingMargin" id="KmA-KS-RUv"/>
-                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="top" secondItem="7Ml-TA-70Y" secondAttribute="bottom" id="abu-lv-xTk"/>
+                                            <constraint firstItem="7Ml-TA-70Y" firstAttribute="top" secondItem="deh-1V-Hyn" secondAttribute="top" id="FFP-QG-SoJ"/>
+                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="leading" secondItem="deh-1V-Hyn" secondAttribute="leading" id="KmA-KS-RUv"/>
                                             <constraint firstAttribute="centerX" secondItem="QHD-n2-m7a" secondAttribute="centerX" id="iBb-ah-CNS"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="QHD-n2-m7a" secondAttribute="trailing" id="lHE-2E-AEP"/>
+                                            <constraint firstAttribute="trailing" secondItem="QHD-n2-m7a" secondAttribute="trailing" id="lHE-2E-AEP"/>
                                             <constraint firstAttribute="centerX" secondItem="7Ml-TA-70Y" secondAttribute="centerX" id="lgj-qE-Q6E"/>
-                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="bottom" secondItem="deh-1V-Hyn" secondAttribute="bottomMargin" id="u44-DI-1lg"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="abu-lv-xTk"/>
-                                                <exclude reference="u44-DI-1lg"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <outlet property="avatarImage" destination="7Ml-TA-70Y" id="yLB-xq-Ltl"/>
                                             <outlet property="avatarName" destination="QHD-n2-m7a" id="dZW-BL-TxP"/>

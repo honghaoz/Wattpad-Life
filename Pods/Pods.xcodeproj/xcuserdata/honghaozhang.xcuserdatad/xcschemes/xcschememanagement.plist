@@ -9,7 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Wattpad Life-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Wattpad Life-JGProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-MZAppearance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-MZFormSheetController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C9B133FE15B469D82E92A00</key>
+		<key>0E704B0D9094447699C9981F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>425C9DC14F124BC7AE608256</key>
+		<key>1ABEB56794994116961A32CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FC121C53F574AFC85E5A671</key>
+		<key>26A3F7068FE24C8891C9B985</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA5C085E1A8F410F804CCDED</key>
+		<key>2A78125F4C564AEC83AC9D06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>323A35422E6D4C4CA59C1BC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A31F94AA73A4342A5017F06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D452E821EBE34B31AC4C6EEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD28819D4722423AAEE7456F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

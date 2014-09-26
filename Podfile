@@ -3,10 +3,12 @@ platform :ios, "7.0"
 
 target "Wattpad Life" do
 
+pod 'Parse'
 pod 'AFNetworking' #, '~> 2.4'
 pod 'PureLayout'
 pod 'JGProgressHUD'
 pod 'MZFormSheetController'
+
 end
 
 target "Wattpad LifeTests" do
