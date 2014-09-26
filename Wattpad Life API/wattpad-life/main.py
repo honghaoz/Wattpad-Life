@@ -22,6 +22,8 @@ import json
 import re
 import copy
 import collections
+import httplib
+import urllib
 
 import logging
 from google.appengine.ext import ndb
@@ -62,17 +64,17 @@ class MainHandler(BasicHandler):
 
 # Return tuple (true/false, content)
 def getHtmlContent():
-	lifeURL = "http://www.wattpad.com/life"
-	session = Session()
-	response = session.get(lifeURL)
-	if response.status_code == requests.codes.ok:
-		return True, response.content
-	else:
-		return False, response.content
+    lifeURL = "http://www.wattpad.com/life"
+    session = Session()
+    response = session.get(lifeURL)
+    if response.status_code == requests.codes.ok:
+        return True, response.content
+    else:
+        return False, response.content
 
 def parseContent(htmlContent):
-	# soup = BeautifulSoup(htmlContent)
-	# print soup.prettify().encode('utf8')
+    # soup = BeautifulSoup(htmlContent)
+    # print soup.prettify().encode('utf8')
     isSuccess, peopleList = parsePeople(htmlContent)
     if isSuccess:
         return peopleList
@@ -142,7 +144,7 @@ def parsePerson(person):
 def getJsonDict(meta, data):
     return {"meta": meta, "data": data}
 
-class UpdateHandler(BasicHandler):
+class PeopleHandle(BasicHandler):
     def get(self):
         meta = {"status": "failure", "count": 0}
         isSuccess, htmlContent = getHtmlContent()
@@ -155,7 +157,141 @@ class UpdateHandler(BasicHandler):
                 return
         self.dumpJSON(getJsonDict(meta, []))
 
+# Parse related
+parseReUpdateTimes = 0
+retryTime = 3
+parseApplicationID = "KqnL5idvjMMBAQtqqskdymvS6vPmajthrGEFcKE6"
+parseRESTApiKey = "7AsVuGnXaj93nTPmSsUhjLCGlfod3Lsz1bRqlOBP"
+
+def createParseObject(aDict):
+    try:
+        print aDict
+        connection = httplib.HTTPSConnection('api.parse.com', 443)
+        connection.connect()
+        connection.request('POST', '/1/classes/Person', json.dumps(aDict), {
+               "X-Parse-Application-Id": parseApplicationID,
+               "X-Parse-REST-API-Key": parseRESTApiKey,
+               "Content-Type": "application/json"
+             })
+        result = json.loads(connection.getresponse().read())
+        logging.info(result)
+    except:
+        logging.error("create an object failed")
+        return False
+    return True
+
+def commitUpdateParse():
+    global parseReUpdateTimes
+    if parseReUpdateTimes > retryTime:
+        logging.error("Update Parse more than 3 times")
+        return False
+    parseReUpdateTimes += 1
+    logging.info("Re update Parse objects")
+
+    try:
+        # Clean out old data
+        # 1: Collecting objectIds
+        try:
+            connection = httplib.HTTPSConnection('api.parse.com', 443)
+            params = urllib.urlencode({"keys":"", "limit":1000})
+            connection.connect()
+            connection.request('GET', '/1/classes/Person?%s' % params, '', {
+                   "X-Parse-Application-Id": parseApplicationID,
+                   "X-Parse-REST-API-Key": parseRESTApiKey
+                 })
+            result = json.loads(connection.getresponse().read())
+            objectIdsToBeDeleted = []
+            for e in result["results"]:
+                objectIdsToBeDeleted.append(e["objectId"])
+        except:
+            logging.error("Get objectIds failed")
+            return commitUpdateParse()
+
+        logging.info("To delete " + str(len(objectIdsToBeDeleted)) + " objects")
+
+        # 2: Construct delete diction
+        requestDictionary = {}
+        requestDictionary["requests"] = []
+
+        # restNumberToBeDeleted = len(objectIdsToBeDeleted)
+        while len(objectIdsToBeDeleted) > 0:
+            logging.info(len(objectIdsToBeDeleted))
+            requestDictionary["requests"] = []
+            # Delete 50 objects in batch
+            deletedEntryNumber = 0
+            for i in range(0, 50):
+                try:
+                    deleteRequest = {}
+                    deleteRequest["method"] = "DELETE"
+                    deleteRequest["path"] = "/1/classes/Person/%s" % objectIdsToBeDeleted[i]
+                except:
+                    deletedEntryNumber = i
+                    break
+                requestDictionary["requests"].append(deleteRequest)
+                deletedEntryNumber = 50;
+
+            # 3: Delete 50 entries
+            connection = httplib.HTTPSConnection('api.parse.com', 443)
+            connection.connect()
+            connection.request('POST', '/1/batch', json.dumps(requestDictionary), {
+                   "X-Parse-Application-Id": parseApplicationID,
+                   "X-Parse-REST-API-Key": parseRESTApiKey,
+                   "Content-Type": "application/json"
+                 })
+            result = json.loads(connection.getresponse().read())
+            logging.info(result)
+            objectIdsToBeDeleted = objectIdsToBeDeleted[deletedEntryNumber:]
+    except:
+        logging.error("Delete Parse Object Failed")
+        return commitUpdateParse()
+
+    logging.info("Delete Parse Object Succeed!")
+
+    # Store new data
+
+    sum = 0
+    result = []
+    try:
+        isSuccess, htmlContent = getHtmlContent()
+        if isSuccess:
+            people = parseContent(htmlContent)
+            if people:
+                result = people
+            else:
+                return commitUpdateParse()
+        else:
+            return commitUpdateParse()
+    except Exception, e:
+        pass
+
+    print "Old count: " + str(len(objectIdsToBeDeleted))
+    print "New count: " + str(len(result))
+    if result and len(result) > 0:
+        for each in result:
+            if not createParseObject(each):
+                logging.error("Create Parse Object Failed")
+                return commitUpdateParse()
+            sum += 1
+        logging.info("Parse updated: %d" % sum)
+        return True
+    else:
+        logging.error("Login Failed")
+        return False
+
+
+class UpdateHandler(BasicHandler):
+    def get(self):
+        global parseReUpdateTimes
+        parseReUpdateTimes = 0
+        result = commitUpdateParse()
+        if result:
+            self.write("Parse updated successfully")
+        else:
+            self.write("Parse updated failed")
+        
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler), 
+    ('/people', PeopleHandle),
     ('/update', UpdateHandler)
 ], debug=True)
