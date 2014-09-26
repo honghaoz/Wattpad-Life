@@ -6,7 +6,7 @@ target "Wattpad Life" do
 pod 'AFNetworking' #, '~> 2.4'
 pod 'PureLayout'
 pod 'JGProgressHUD'
-
+pod 'MZFormSheetController'
 end
 
 target "Wattpad LifeTests" do

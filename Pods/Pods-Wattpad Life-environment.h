@@ -54,6 +54,24 @@
 #define COCOAPODS_VERSION_MINOR_JGProgressHUD 2
 #define COCOAPODS_VERSION_PATCH_JGProgressHUD 2
 
+// MZAppearance
+#define COCOAPODS_POD_AVAILABLE_MZAppearance
+#define COCOAPODS_VERSION_MAJOR_MZAppearance 1
+#define COCOAPODS_VERSION_MINOR_MZAppearance 1
+#define COCOAPODS_VERSION_PATCH_MZAppearance 3
+
+// MZFormSheetController
+#define COCOAPODS_POD_AVAILABLE_MZFormSheetController
+#define COCOAPODS_VERSION_MAJOR_MZFormSheetController 2
+#define COCOAPODS_VERSION_MINOR_MZFormSheetController 4
+#define COCOAPODS_VERSION_PATCH_MZFormSheetController 1
+
+// MZFormSheetController/Core
+#define COCOAPODS_POD_AVAILABLE_MZFormSheetController_Core
+#define COCOAPODS_VERSION_MAJOR_MZFormSheetController_Core 2
+#define COCOAPODS_VERSION_MINOR_MZFormSheetController_Core 4
+#define COCOAPODS_VERSION_PATCH_MZFormSheetController_Core 1
+
 // PureLayout
 #define COCOAPODS_POD_AVAILABLE_PureLayout
 #define COCOAPODS_VERSION_MAJOR_PureLayout 1
