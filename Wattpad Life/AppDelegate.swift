@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = rootViewController
         self.window!.makeKeyAndVisible()
         
+        // Parse set up
+        Parse.setApplicationId("KqnL5idvjMMBAQtqqskdymvS6vPmajthrGEFcKE6", clientKey: "SKP9h7NMn5fy0kU7Tjv2l0WnhRJK8NnwFlMeXca9")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        People.sharedPeople.getPeople(nil, failure: nil)
+        
         return true
     }
 

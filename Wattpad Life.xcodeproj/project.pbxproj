@@ -21,6 +21,7 @@
 		FA4391E119D5AAEB00CA06C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391E019D5AAEB00CA06C4 /* Security.framework */; };
 		FA4391E319D5AAEF00CA06C4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391E219D5AAEF00CA06C4 /* StoreKit.framework */; };
 		FA4391E519D5AAF700CA06C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391E419D5AAF700CA06C4 /* SystemConfiguration.framework */; };
+		FA4391E819D5DA5F00CA06C4 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4391E719D5DA5F00CA06C4 /* People.swift */; };
 		FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6DE19D491DA003EC88D /* AppDelegate.swift */; };
 		FADDD6E619D491DA003EC88D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADDD6E519D491DA003EC88D /* Images.xcassets */; };
 		FADDD6F519D491DA003EC88D /* Wattpad_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDD6F419D491DA003EC88D /* Wattpad_LifeTests.swift */; };
@@ -56,6 +57,7 @@
 		FA4391E019D5AAEB00CA06C4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FA4391E219D5AAEF00CA06C4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FA4391E419D5AAF700CA06C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA4391E719D5DA5F00CA06C4 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		FADDD6D919D491DA003EC88D /* Wattpad Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wattpad Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADDD6DD19D491DA003EC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADDD6DE19D491DA003EC88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		FA4391E619D5DA4E00CA06C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA4391E719D5DA5F00CA06C4 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FADDD6D019D491DA003EC88D = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 			children = (
 				FADDD6DE19D491DA003EC88D /* AppDelegate.swift */,
 				FADDD6E519D491DA003EC88D /* Images.xcassets */,
+				FA4391E619D5DA4E00CA06C4 /* Model */,
 				8F1121E619D5AFA400C75760 /* Constants */,
 				FADDD6FE19D49213003EC88D /* Extension */,
 				FADDD71719D49DBB003EC88D /* Controller */,
@@ -341,6 +352,7 @@
 				FADDD70019D49238003EC88D /* Extension.swift in Sources */,
 				8F1121EC19D5CD8B00C75760 /* DetailUserViewController.swift in Sources */,
 				FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */,
+				FA4391E819D5DA5F00CA06C4 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
