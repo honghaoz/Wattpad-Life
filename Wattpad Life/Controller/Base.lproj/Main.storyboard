@@ -109,6 +109,7 @@
                                 <rect key="frame" x="75" y="191" width="225" height="225"/>
                                 <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="225" id="6FV-wm-BJq"/>
                                     <constraint firstAttribute="width" secondItem="Fhs-bt-iX1" secondAttribute="height" multiplier="1:1" id="qcT-1T-yGy"/>
                                 </constraints>
                             </imageView>
@@ -152,10 +153,16 @@
                             <constraint firstItem="prY-NR-akj" firstAttribute="leading" secondItem="Opa-ct-lU4" secondAttribute="leading" constant="10" id="Owb-5D-JGb"/>
                             <constraint firstItem="Fhs-bt-iX1" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" multiplier="0.6" id="PuV-IK-CUW"/>
                             <constraint firstItem="YGt-Im-7Rn" firstAttribute="top" secondItem="dtA-5O-wwI" secondAttribute="bottom" constant="10" id="Q4w-PA-Zyb"/>
+                            <constraint firstAttribute="width" secondItem="Fhs-bt-iX1" secondAttribute="width" id="UlJ-Rl-Haq"/>
                             <constraint firstItem="prY-NR-akj" firstAttribute="top" secondItem="GP8-8G-jXS" secondAttribute="bottom" constant="10" id="YZ2-fS-LRw"/>
                             <constraint firstItem="YGt-Im-7Rn" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" constant="-20" id="mun-vL-dfG"/>
                             <constraint firstItem="dtA-5O-wwI" firstAttribute="top" secondItem="Fhs-bt-iX1" secondAttribute="bottom" constant="10" id="p64-H3-ERe"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UlJ-Rl-Haq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>

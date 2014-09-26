@@ -23,6 +23,9 @@ class DetailUserViewController: UIViewController {
         avatarImage.setImageWithURL(selectedPeople.avatarURL)
         avatarImage.layer.cornerRadius = avatarImage.frame.size.width/8.0
         avatarImage.clipsToBounds = true
+        avatarName.adjustsFontSizeToFitWidth = true
+        jobTitle.adjustsFontSizeToFitWidth = true
+
     }
     
     @IBAction func exitButtonTapped(sender: AnyObject) {
