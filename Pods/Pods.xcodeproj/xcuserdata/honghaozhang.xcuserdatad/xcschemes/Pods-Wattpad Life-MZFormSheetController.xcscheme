@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A31F94AA73A4342A5017F06"
+               BlueprintIdentifier = "3C09E84D97CE484A9AFCDC34"
                BuildableName = "libPods-Wattpad Life-MZFormSheetController.a"
                BlueprintName = "Pods-Wattpad Life-MZFormSheetController"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A78125F4C564AEC83AC9D06"
+               BlueprintIdentifier = "EFC00F8646C1455C8C33B06B"
                BuildableName = "libPods-Wattpad Life-MZAppearance.a"
                BlueprintName = "Pods-Wattpad Life-MZAppearance"
                ReferencedContainer = "container:Pods.xcodeproj">

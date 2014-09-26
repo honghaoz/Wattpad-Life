@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_Bolts 1
 #define COCOAPODS_VERSION_PATCH_Bolts 2
 
+// CRGradientNavigationBar
+#define COCOAPODS_POD_AVAILABLE_CRGradientNavigationBar
+#define COCOAPODS_VERSION_MAJOR_CRGradientNavigationBar 0
+#define COCOAPODS_VERSION_MINOR_CRGradientNavigationBar 3
+#define COCOAPODS_VERSION_PATCH_CRGradientNavigationBar 2
+
 // JGProgressHUD
 #define COCOAPODS_POD_AVAILABLE_JGProgressHUD
 #define COCOAPODS_VERSION_MAJOR_JGProgressHUD 1

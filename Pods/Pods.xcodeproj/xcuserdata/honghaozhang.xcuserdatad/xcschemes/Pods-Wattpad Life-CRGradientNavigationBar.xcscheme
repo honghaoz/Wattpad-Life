@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04A48A1FD7994209AB0ECE44"
-               BuildableName = "libPods-Wattpad Life-JGProgressHUD.a"
-               BlueprintName = "Pods-Wattpad Life-JGProgressHUD"
+               BlueprintIdentifier = "7B88886880C743BE89A204C7"
+               BuildableName = "libPods-Wattpad Life-CRGradientNavigationBar.a"
+               BlueprintName = "Pods-Wattpad Life-CRGradientNavigationBar"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Wattpad Life-CRGradientNavigationBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Wattpad Life-JGProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E704B0D9094447699C9981F</key>
+		<key>04A48A1FD7994209AB0ECE44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1ABEB56794994116961A32CB</key>
+		<key>33E88C5AA67848FEA32E9227</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>26A3F7068FE24C8891C9B985</key>
+		<key>3C09E84D97CE484A9AFCDC34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A78125F4C564AEC83AC9D06</key>
+		<key>7B88886880C743BE89A204C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>323A35422E6D4C4CA59C1BC4</key>
+		<key>90C3D6AA414A4C5B8B3305DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A31F94AA73A4342A5017F06</key>
+		<key>92E199D83EF34E5A8255D43A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D452E821EBE34B31AC4C6EEE</key>
+		<key>C41FA71C5B8641C0BC74F868</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD28819D4722423AAEE7456F</key>
+		<key>CBD99D769391478F99B87F9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFC00F8646C1455C8C33B06B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,7 @@ pod 'AFNetworking' #, '~> 2.4'
 pod 'PureLayout'
 pod 'JGProgressHUD'
 pod 'MZFormSheetController'
+pod 'CRGradientNavigationBar'
 
 end
 
