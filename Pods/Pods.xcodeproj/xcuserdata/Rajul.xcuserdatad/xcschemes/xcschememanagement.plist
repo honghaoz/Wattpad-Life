@@ -16,6 +16,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Pods-Wattpad Life-CRGradientNavigationBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Pods-Wattpad Life-JGProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,6 +64,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04A48A1FD7994209AB0ECE44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0E704B0D9094447699C9981F</key>
 		<dict>
 			<key>primary</key>
@@ -89,6 +99,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>33E88C5AA67848FEA32E9227</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C09E84D97CE484A9AFCDC34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>48AB76176DCA4FA9A424E3A8</key>
 		<dict>
 			<key>primary</key>
@@ -104,12 +124,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7B88886880C743BE89A204C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90C3D6AA414A4C5B8B3305DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92E199D83EF34E5A8255D43A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9DD4C3FA163D4FDCBFDB30DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C41FA71C5B8641C0BC74F868</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C5EDD40171AC49638C943624</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBD99D769391478F99B87F9A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -125,6 +170,11 @@
 			<true/>
 		</dict>
 		<key>E15BEB9E38224A859FB21837</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFC00F8646C1455C8C33B06B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
