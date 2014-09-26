@@ -62,8 +62,16 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         var detailViewController:DetailUserViewController = UIViewController.viewControllerInStoryboard("Main", viewControllerName: "detailView") as DetailUserViewController
         
-        self.mz_presentFormSheetWithViewController(detailViewController, animated: true, completionHandler: nil)
+        var formSheet:MZFormSheetController = MZFormSheetController(viewController: detailViewController)
+        formSheet.shouldCenterVertically = true
+        formSheet.shouldDismissOnBackgroundViewTap = true
+        formSheet.transitionStyle = MZFormSheetTransitionStyle.Bounce
+        formSheet.cornerRadius = 8.0;
+        formSheet.portraitTopInset = 6.0;
+        formSheet.landscapeTopInset = 6.0;
+        formSheet.presentedFormSheetSize = CGSizeMake(self.view.frame.size.width-40.0, self.view.frame.size.height/2.0);
         
+        self.mz_presentFormSheetController(formSheet, animated: true, completionHandler: nil)
     }
     
 }
