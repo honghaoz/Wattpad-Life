@@ -14,7 +14,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.barTintColor = WattpadOrange
+        self.navigationController?.navigationBar.barTintColor = mainColor
         collectionView.delegate = self
         collectionView.dataSource = self
         People.sharedPeople.getPeople(nil, failure: nil)
