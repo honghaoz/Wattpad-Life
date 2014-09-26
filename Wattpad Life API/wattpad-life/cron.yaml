@@ -1,6 +1,6 @@
 cron:
 - description: Check check
-  url: /update.json
-  schedule: every 60 minutes from 0:00 to 00:00
+  url: /update
+  schedule: every 10 minutes from 0:00 to 23:59
   timezone: Canada/Eastern
-  target: iphone6-reserve
+  target: wattpad-life
