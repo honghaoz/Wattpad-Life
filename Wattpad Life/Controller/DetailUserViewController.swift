@@ -8,8 +8,12 @@
 
 import UIKit
 
-class DetailUserViewController: UIViewController {
+class DetailUserViewController: MZFormSheetController {
 
+    override func loadView() {
+        self.shouldCenterVertically = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
