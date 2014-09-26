@@ -17,17 +17,13 @@ class DetailUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
-
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
-
+        var selectedPeople = People.sharedPeople.people[People.sharedPeople.currentIndex]
+        jobTitle.text = selectedPeople.title
+        avatarName.text = selectedPeople.name
+        avatarImage.setImageWithURL(selectedPeople.avatarURL)
+        avatarImage.layer.cornerRadius = avatarImage.frame.size.width/8.0
+        avatarImage.clipsToBounds = true
+        
     }
     
     @IBAction func exitButtonTapped(sender: AnyObject) {

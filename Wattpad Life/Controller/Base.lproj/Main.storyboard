@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HaW-Lk-XSH">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -105,14 +106,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fhs-bt-iX1">
-                                <rect key="frame" x="94" y="210" width="187" height="187"/>
+                                <rect key="frame" x="75" y="191" width="225" height="225"/>
                                 <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fhs-bt-iX1" secondAttribute="height" multiplier="1:1" id="qcT-1T-yGy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtA-5O-wwI">
-                                <rect key="frame" x="10" y="407" width="355" height="30"/>
+                                <rect key="frame" x="10" y="426" width="355" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GUd-tB-qgo"/>
                                 </constraints>
@@ -121,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGt-Im-7Rn">
-                                <rect key="frame" x="10" y="447" width="355" height="20"/>
+                                <rect key="frame" x="10" y="466" width="355" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="aeR-Wd-j7V"/>
                                 </constraints>
@@ -149,7 +150,7 @@
                             <constraint firstAttribute="centerY" secondItem="Fhs-bt-iX1" secondAttribute="centerY" constant="30" id="HUz-lh-xBE"/>
                             <constraint firstItem="YGt-Im-7Rn" firstAttribute="centerX" secondItem="dtA-5O-wwI" secondAttribute="centerX" id="I22-DX-DwK"/>
                             <constraint firstItem="prY-NR-akj" firstAttribute="leading" secondItem="Opa-ct-lU4" secondAttribute="leading" constant="10" id="Owb-5D-JGb"/>
-                            <constraint firstItem="Fhs-bt-iX1" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" multiplier="0.5" id="PuV-IK-CUW"/>
+                            <constraint firstItem="Fhs-bt-iX1" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" multiplier="0.6" id="PuV-IK-CUW"/>
                             <constraint firstItem="YGt-Im-7Rn" firstAttribute="top" secondItem="dtA-5O-wwI" secondAttribute="bottom" constant="10" id="Q4w-PA-Zyb"/>
                             <constraint firstItem="prY-NR-akj" firstAttribute="top" secondItem="GP8-8G-jXS" secondAttribute="bottom" constant="10" id="YZ2-fS-LRw"/>
                             <constraint firstItem="YGt-Im-7Rn" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" constant="-20" id="mun-vL-dfG"/>

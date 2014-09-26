@@ -38,7 +38,7 @@ private let _sharedPeople = People()
 
 class People {
     var people: [Person]!
-    
+    var currentIndex:Int = 0
     init() {
         println("People inited")
     }

@@ -59,6 +59,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        People.sharedPeople.currentIndex = indexPath.row
+
         var detailViewController:DetailUserViewController = UIViewController.viewControllerInStoryboard("Main", viewControllerName: "detailView") as DetailUserViewController
         
         var formSheet:MZFormSheetController = MZFormSheetController(viewController: detailViewController)
@@ -76,8 +78,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         backgroundWindow.backgroundColor = UIColor.clearColor()
         
         var appearance:AnyObject = MZFormSheetController.appearance()
-        
-        self.mz_presentFormSheetController(formSheet, animated: true, completionHandler: nil)
+
+        self.mz_presentFormSheetController(formSheet, animated: true, completionHandler:nil)
     }
     
     @IBAction func refresh(sender: AnyObject) {

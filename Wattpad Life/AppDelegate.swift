@@ -25,10 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Parse set up
         Parse.setApplicationId("KqnL5idvjMMBAQtqqskdymvS6vPmajthrGEFcKE6", clientKey: "SKP9h7NMn5fy0kU7Tjv2l0WnhRJK8NnwFlMeXca9")
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        
-        People.sharedPeople.getPeople(nil, failure: nil)
-        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)        
         return true
     }
 
