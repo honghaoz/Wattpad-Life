@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Person {
+class Person: NSObject {
     var avatarURL: NSURL!
     var name: String!
     var title: String!
@@ -36,10 +36,11 @@ class Person {
 
 private let _sharedPeople = People()
 
-class People {
+class People: NSObject {
     var people: [Person]!
     var currentIndex:Int = 0
-    init() {
+    override init() {
+        super.init()
         println("People inited")
     }
     
@@ -50,6 +51,8 @@ class People {
     func getPeople(success:(() -> ())?, failure:((errorMessage: String, error: NSError?) -> ())?) {
         people = [Person]()
         var query = PFQuery(className: "Person")
+        query.addDescendingOrder("title")
+        query.addAscendingOrder("name")
         query.limit = 1000
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
@@ -61,6 +64,8 @@ class People {
                     NSNotificationCenter.defaultCenter().postNotificationName("DataUpdated", object: nil)
                 }
                 println("Count: \(self.people.count)")
+//                self.sortPeopleByTitle()
+//                NSNotificationCenter.defaultCenter().postNotificationName("DataUpdated", object: nil)
                 success?()
             } else {
                 println("Get people error")
@@ -70,6 +75,10 @@ class People {
     }
     
     func sortPeopleByTitle() {
-        
+        let titleDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        let nameDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        var peopleArray = NSArray(array: self.people)
+        peopleArray.sortedArrayUsingDescriptors([titleDescriptor, nameDescriptor])
+        self.people = peopleArray as [Person]
     }
 }
