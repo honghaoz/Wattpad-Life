@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "32B16D5A808B4A18AA634D00"
+               BlueprintIdentifier = "7FC121C53F574AFC85E5A671"
                BuildableName = "libPods-Wattpad Life-AFNetworking.a"
                BlueprintName = "Pods-Wattpad Life-AFNetworking"
                ReferencedContainer = "container:Pods.xcodeproj">
