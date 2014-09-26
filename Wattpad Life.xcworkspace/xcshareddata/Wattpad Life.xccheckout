@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D9EE291-E47B-4518-8DC1-A0472A2A4636</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Wattpad Life</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EC4EE9A135E51976BCF7DA1BF6AE4EEA997D635E</key>
+		<string>https://github.com/honghaoz/Wattpad-Life.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Wattpad Life.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EC4EE9A135E51976BCF7DA1BF6AE4EEA997D635E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/honghaoz/Wattpad-Life.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EC4EE9A135E51976BCF7DA1BF6AE4EEA997D635E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC4EE9A135E51976BCF7DA1BF6AE4EEA997D635E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Wattpad%20Life</string>
+		</dict>
+	</array>
+</dict>
+</plist>
