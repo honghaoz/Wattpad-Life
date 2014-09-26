@@ -8,7 +8,10 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+let hud:JGProgressHUD = JGProgressHUD()
+let searchBar:UISearchBar = UISearchBar()
+
+class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -19,16 +22,29 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.dataSource = self
         People.sharedPeople.getPeople(nil, failure: nil)
         
+        searchBar.autocorrectionType = UITextAutocorrectionType.No
+        searchBar.delegate = self
+        searchBar.frame = CGRectMake(0.0,64.0, self.view.frame.size.width, 44)
+        searchBar.tintColor = UIColor.whiteColor()
+        self.view.addSubview(searchBar)
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "refresh:", name: "DataUpdated", object: nil)
+        hud.textLabel.text = "Loading"
+        hud.showInView(self.view)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        hud.dismissAfterDelay(0.5)
     }
     
     override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+        hud.dismissAfterDelay(0.5)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -47,7 +63,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
 
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)
+        return UIEdgeInsetsMake(54.0, 10.0, 10.0, 10.0)
     }
     
     
@@ -90,6 +106,22 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func refresh(sender: AnyObject) {
         collectionView.reloadData()
     }
+    
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(true, animated: true)
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
 }
 
 
