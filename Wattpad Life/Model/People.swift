@@ -58,6 +58,7 @@ class People {
                     var newPerson: Person = Person.newWithPFObject(eachObject as PFObject)
                     self.people.append(newPerson)
                     print("Name: \(newPerson.name) Title: \(newPerson.title) Avatar: \(newPerson.avatarURL)\n")
+                    NSNotificationCenter.defaultCenter().postNotificationName("DataUpdated", object: nil)
                 }
                 println("Count: \(self.people.count)")
                 success?()
@@ -66,5 +67,9 @@ class People {
                 failure?(errorMessage: "Get people error", error: error)
             }
         }
+    }
+    
+    func sortPeopleByTitle() {
+        
     }
 }
