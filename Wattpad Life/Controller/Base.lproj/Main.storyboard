@@ -36,7 +36,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-n2-m7a">
-                                                    <rect key="frame" x="8" y="78" width="84" height="14"/>
+                                                    <rect key="frame" x="8" y="78" width="84" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -52,6 +52,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="top" secondItem="7Ml-TA-70Y" secondAttribute="bottom" id="4vM-tN-KI3"/>
                                             <constraint firstItem="7Ml-TA-70Y" firstAttribute="top" secondItem="deh-1V-Hyn" secondAttribute="topMargin" id="FFP-QG-SoJ"/>
                                             <constraint firstItem="QHD-n2-m7a" firstAttribute="leading" secondItem="deh-1V-Hyn" secondAttribute="leadingMargin" id="KmA-KS-RUv"/>
                                             <constraint firstItem="QHD-n2-m7a" firstAttribute="top" secondItem="7Ml-TA-70Y" secondAttribute="bottom" id="abu-lv-xTk"/>
@@ -60,6 +61,12 @@
                                             <constraint firstAttribute="centerX" secondItem="7Ml-TA-70Y" secondAttribute="centerX" id="lgj-qE-Q6E"/>
                                             <constraint firstItem="QHD-n2-m7a" firstAttribute="bottom" secondItem="deh-1V-Hyn" secondAttribute="bottomMargin" id="u44-DI-1lg"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="abu-lv-xTk"/>
+                                                <exclude reference="u44-DI-1lg"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="avatarImage" destination="7Ml-TA-70Y" id="yLB-xq-Ltl"/>
                                             <outlet property="avatarName" destination="QHD-n2-m7a" id="dZW-BL-TxP"/>
@@ -85,6 +92,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832.5" y="-360.5"/>
+        </scene>
+        <!--Detail User View Controller-->
+        <scene sceneID="brc-fv-6He">
+            <objects>
+                <viewController storyboardIdentifier="detailView" id="9if-gW-Nfh" customClass="DetailUserViewController" customModule="Wattpad_Life" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GP8-8G-jXS"/>
+                        <viewControllerLayoutGuide type="bottom" id="1yW-38-7ZB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Opa-ct-lU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It Works!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzn-Wq-Pxw">
+                                <rect key="frame" x="0.0" y="324" width="375" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JmH-FW-K3E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Kzn-Wq-Pxw" secondAttribute="centerY" id="U0w-aR-AxX"/>
+                            <constraint firstAttribute="centerX" secondItem="Kzn-Wq-Pxw" secondAttribute="centerX" id="WHD-9j-0RE"/>
+                            <constraint firstItem="Kzn-Wq-Pxw" firstAttribute="width" secondItem="Opa-ct-lU4" secondAttribute="width" id="Zea-Nc-eJt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qen-Uz-xcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426.5" y="-348.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VSQ-EW-4Bw">

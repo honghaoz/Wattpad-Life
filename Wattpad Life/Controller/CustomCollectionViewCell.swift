@@ -21,10 +21,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
         avatarImage.setImageWithURL(url)
         avatarImage.layer.cornerRadius = avatarImage.frame.size.width/2.0
         avatarImage.clipsToBounds = true
-        avatarImage.layer.borderWidth = 3.0
-        avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
-        avatarImage.setTranslatesAutoresizingMaskIntoConstraints(false)
-        avatarName.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //avatarImage.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //avatarName.setTranslatesAutoresizingMaskIntoConstraints(false)
         avatarName.text = name
         avatarName.adjustsFontSizeToFitWidth = true
     }

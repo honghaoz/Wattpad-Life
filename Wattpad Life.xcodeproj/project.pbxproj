@@ -11,6 +11,7 @@
 		8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */; };
 		8F1121E819D5AFAE00C75760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E719D5AFAE00C75760 /* Constants.swift */; };
 		8F1121EA19D5C1F300C75760 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E919D5C1F300C75760 /* CustomCollectionViewCell.swift */; };
+		8F1121EC19D5CD8B00C75760 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121EB19D5CD8B00C75760 /* DetailUserViewController.swift */; };
 		FA4391D319D5AA9400CA06C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D219D5AA9400CA06C4 /* AudioToolbox.framework */; };
 		FA4391D519D5AACB00CA06C4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D419D5AACB00CA06C4 /* CFNetwork.framework */; };
 		FA4391D719D5AAD000CA06C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D619D5AAD000CA06C4 /* CoreGraphics.framework */; };
@@ -45,6 +46,7 @@
 		8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Wattpad-Life-Bridging-Header.m"; sourceTree = "<group>"; };
 		8F1121E719D5AFAE00C75760 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F1121E919D5C1F300C75760 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F1121EB19D5CD8B00C75760 /* DetailUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
 		936C59DDA5D643E29D9D83A5 /* Pods-Wattpad Life.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wattpad Life.xcconfig"; path = "Pods/Pods-Wattpad Life.xcconfig"; sourceTree = "<group>"; };
 		FA4391D219D5AA9400CA06C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FA4391D419D5AACB00CA06C4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -197,6 +199,7 @@
 				FADDD71E19D49E08003EC88D /* Main.storyboard */,
 				FADDD71819D49DBB003EC88D /* MainViewController.swift */,
 				8F1121E919D5C1F300C75760 /* CustomCollectionViewCell.swift */,
+				8F1121EB19D5CD8B00C75760 /* DetailUserViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */,
 				FADDD71919D49DBB003EC88D /* MainViewController.swift in Sources */,
 				FADDD70019D49238003EC88D /* Extension.swift in Sources */,
+				8F1121EC19D5CD8B00C75760 /* DetailUserViewController.swift in Sources */,
 				FADDD6DF19D491DA003EC88D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

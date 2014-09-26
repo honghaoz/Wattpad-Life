@@ -59,7 +59,12 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return CGSizeMake(80.0, 100.0)
     }
     
-    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var detailViewController:DetailUserViewController = UIViewController.viewControllerInStoryboard("Main", viewControllerName: "detailView") as DetailUserViewController
+        
+        self.mz_presentFormSheetWithViewController(detailViewController, animated: true, completionHandler: nil)
+        
+    }
     
 }
 
