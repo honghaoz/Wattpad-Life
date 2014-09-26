@@ -17,6 +17,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.navigationController?.navigationBar.barTintColor = WattpadOrange
         collectionView.delegate = self
         collectionView.dataSource = self
+        People.sharedPeople.getPeople(nil, failure: nil)
         
     }
     
@@ -27,16 +28,14 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:CustomCollectionViewCell =  collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as CustomCollectionViewCell
-        var url:NSURL = NSURL(string: "http://a.wattpad.com/img/life/adam.jpg?v=9911848")
-        cell.configureCell(url, name: "Adam Dahan")
+        cell.configureCell(People.sharedPeople.people[indexPath.row].avatarURL, name: People.sharedPeople.people[indexPath.row].name)
         cell.layoutIfNeeded()
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return People.sharedPeople.people.count
     }
-    
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -81,6 +80,9 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.mz_presentFormSheetController(formSheet, animated: true, completionHandler: nil)
     }
     
+    @IBAction func refresh(sender: AnyObject) {
+        collectionView.reloadData()
+    }
 }
 
 
