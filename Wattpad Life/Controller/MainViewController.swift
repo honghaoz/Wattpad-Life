@@ -71,6 +71,13 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         formSheet.landscapeTopInset = 6.0;
         formSheet.presentedFormSheetSize = CGSizeMake(self.view.frame.size.width-40.0, self.view.frame.size.height/2.0);
         
+        var backgroundWindow:MZFormSheetBackgroundWindow = MZFormSheetController.sharedBackgroundWindow()
+        backgroundWindow.backgroundBlurEffect = true
+        backgroundWindow.blurRadius = 5.0
+        backgroundWindow.backgroundColor = UIColor.clearColor()
+        
+        var appearance:AnyObject = MZFormSheetController.appearance()
+        
         self.mz_presentFormSheetController(formSheet, animated: true, completionHandler: nil)
     }
     
