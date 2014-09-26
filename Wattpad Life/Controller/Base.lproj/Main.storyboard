@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HaW-Lk-XSH">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Wattpad Life-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Wattpad_Life" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,10 +17,70 @@
                     <view key="view" contentMode="scaleToFill" id="8gh-QT-aDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.21960784310000001" green="0.47843137250000001" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4dW-L1-ewh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HLy-r0-7Nw">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="deh-1V-Hyn" customClass="CustomCollectionViewCell" customModule="Wattpad_Life" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-n2-m7a">
+                                                    <rect key="frame" x="8" y="78" width="84" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ml-TA-70Y">
+                                                    <rect key="frame" x="15" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="48c-8l-Eb0"/>
+                                                        <constraint firstAttribute="width" constant="70" id="SLg-vl-ZG1"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="7Ml-TA-70Y" firstAttribute="top" secondItem="deh-1V-Hyn" secondAttribute="topMargin" id="FFP-QG-SoJ"/>
+                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="leading" secondItem="deh-1V-Hyn" secondAttribute="leadingMargin" id="KmA-KS-RUv"/>
+                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="top" secondItem="7Ml-TA-70Y" secondAttribute="bottom" id="abu-lv-xTk"/>
+                                            <constraint firstAttribute="centerX" secondItem="QHD-n2-m7a" secondAttribute="centerX" id="iBb-ah-CNS"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="QHD-n2-m7a" secondAttribute="trailing" id="lHE-2E-AEP"/>
+                                            <constraint firstAttribute="centerX" secondItem="7Ml-TA-70Y" secondAttribute="centerX" id="lgj-qE-Q6E"/>
+                                            <constraint firstItem="QHD-n2-m7a" firstAttribute="bottom" secondItem="deh-1V-Hyn" secondAttribute="bottomMargin" id="u44-DI-1lg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="avatarImage" destination="7Ml-TA-70Y" id="yLB-xq-Ltl"/>
+                                            <outlet property="avatarName" destination="QHD-n2-m7a" id="dZW-BL-TxP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4dW-L1-ewh" secondAttribute="centerX" id="1RR-C3-Pz9"/>
+                            <constraint firstItem="4dW-L1-ewh" firstAttribute="width" secondItem="8gh-QT-aDi" secondAttribute="width" id="Xbs-gB-Ouf"/>
+                            <constraint firstItem="4dW-L1-ewh" firstAttribute="height" secondItem="8gh-QT-aDi" secondAttribute="height" id="oid-5g-kcb"/>
+                            <constraint firstAttribute="centerY" secondItem="4dW-L1-ewh" secondAttribute="centerY" id="yo2-kp-eQG"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6PX-fs-QhO"/>
+                    <navigationItem key="navigationItem" title="Wattpad Life" id="ZcT-jd-CWB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="4dW-L1-ewh" id="dwd-dc-5R5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,6 +95,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DYQ-7G-k4K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

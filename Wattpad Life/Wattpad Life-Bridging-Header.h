@@ -5,3 +5,5 @@
 #import "AFNetworking.h"
 #import "JGProgressHUD.h"
 #import "PureLayout.h"
+#import "UIImageView+AFNetworking.h"
+#import "ALView+PureLayout.h"
