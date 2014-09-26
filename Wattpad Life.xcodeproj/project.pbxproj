@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09D960583E5B4726BF583F8C /* libPods-Wattpad Life.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85675216123C423F833FB096 /* libPods-Wattpad Life.a */; };
 		8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */; };
+		8F1121E819D5AFAE00C75760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1121E719D5AFAE00C75760 /* Constants.swift */; };
 		FA4391D319D5AA9400CA06C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D219D5AA9400CA06C4 /* AudioToolbox.framework */; };
 		FA4391D519D5AACB00CA06C4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D419D5AACB00CA06C4 /* CFNetwork.framework */; };
 		FA4391D719D5AAD000CA06C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4391D619D5AAD000CA06C4 /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 		85675216123C423F833FB096 /* libPods-Wattpad Life.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wattpad Life.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1121E319D5AECA00C75760 /* Wattpad Life-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wattpad Life-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F1121E419D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Wattpad-Life-Bridging-Header.m"; sourceTree = "<group>"; };
+		8F1121E719D5AFAE00C75760 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		936C59DDA5D643E29D9D83A5 /* Pods-Wattpad Life.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wattpad Life.xcconfig"; path = "Pods/Pods-Wattpad Life.xcconfig"; sourceTree = "<group>"; };
 		FA4391D219D5AA9400CA06C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FA4391D419D5AACB00CA06C4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F1121E619D5AFA400C75760 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8F1121E719D5AFAE00C75760 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		FADDD6D019D491DA003EC88D = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 			children = (
 				FADDD6DE19D491DA003EC88D /* AppDelegate.swift */,
 				FADDD6E519D491DA003EC88D /* Images.xcassets */,
+				8F1121E619D5AFA400C75760 /* Constants */,
 				FADDD6FE19D49213003EC88D /* Extension */,
 				FADDD71719D49DBB003EC88D /* Controller */,
 				FADDD6DC19D491DA003EC88D /* Supporting Files */,
@@ -321,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1121E819D5AFAE00C75760 /* Constants.swift in Sources */,
 				8F1121E519D5AECA00C75760 /* Wattpad-Life-Bridging-Header.m in Sources */,
 				FADDD71919D49DBB003EC88D /* MainViewController.swift in Sources */,
 				FADDD70019D49238003EC88D /* Extension.swift in Sources */,
