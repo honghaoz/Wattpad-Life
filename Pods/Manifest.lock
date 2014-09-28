@@ -31,6 +31,7 @@ PODS:
     - MZAppearance (~> 1.1.3)
   - Parse (1.4.1):
     - Bolts (~> 1.1.2)
+  - pop (1.0.7)
   - PureLayout (1.1.0)
 
 DEPENDENCIES:
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - JGProgressHUD
   - MZFormSheetController
   - Parse
+  - pop
   - PureLayout
 
 SPEC CHECKSUMS:
@@ -49,6 +51,7 @@ SPEC CHECKSUMS:
   MZAppearance: c88502c0c2345120630c34e09d5ff09e2969ba30
   MZFormSheetController: 4b58486f5f1562b3905310b02e8dbbb5a0a94128
   Parse: db1a09c832b7509edcc88a65dc07229f5e578c73
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
   PureLayout: c8960fa0f3b40d849d5e177d699d0148faa63b63
 
 COCOAPODS: 0.33.1

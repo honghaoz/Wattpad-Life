@@ -32,7 +32,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewDidAppear(animated: Bool) {
-        hud.dismissAfterDelay(0.5)
+        hud.dismissAfterDelay(2.0)
     }
     
     override func viewWillDisappear(animated: Bool) {

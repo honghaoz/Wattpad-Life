@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Wattpad Life-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-CRGradientNavigationBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-JGProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-MZAppearance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-MZFormSheetController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-Parse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life-pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wattpad Life.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0F050F9E5F9B4B2084C05475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B4BA535701E42B98041E2B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>613701C5B61041569AF2F7CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FA556B1B3854333AA472DAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963E2540D7F04F4EBC3E5E8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3986C12E969465F968D521C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCE3539322B14A3C96A01C7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D29D93638A174FDC88C85E91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F33F6703E79F46F08F55E975</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F56E5AD6AD904177BC794CEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

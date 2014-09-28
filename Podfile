@@ -9,6 +9,7 @@ pod 'PureLayout'
 pod 'JGProgressHUD'
 pod 'MZFormSheetController'
 pod 'CRGradientNavigationBar'
+pod 'pop'
 
 end
 

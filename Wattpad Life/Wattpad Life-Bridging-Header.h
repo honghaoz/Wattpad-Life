@@ -8,5 +8,6 @@
 #import "UIImageView+AFNetworking.h"
 #import "ALView+PureLayout.h"
 #import "MZFormSheetController.h"
+#import "POP.h"
 
 #import <Parse/Parse.h>
