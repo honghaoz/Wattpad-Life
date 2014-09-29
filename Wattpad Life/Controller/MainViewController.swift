@@ -9,7 +9,8 @@
 import UIKit
 
 let hud:JGProgressHUD = JGProgressHUD()
-let searchBar:UISearchBar = UISearchBar()
+let searchBar:UISearchBar = UISearchBar()   
+
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
